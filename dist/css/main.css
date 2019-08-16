@@ -7,8 +7,8 @@
   transition: all 1s ease-out;
 }
 .menu-btn .btn-line {
-  width: 28px;
-  height: 3px;
+  width: 70px;
+  height: 5px;
   margin: 0 0 5px 0;
   background: #f0ece2;
   transition: all 1s ease-out;
@@ -30,7 +30,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.96;
+  opacity: 1;
   visibility: hidden;
 }
 .menu.show {
@@ -153,7 +153,6 @@ h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
   font-size: 1rem;
 }
 
@@ -180,7 +179,7 @@ main .icons {
   margin-top: 1rem;
 }
 main .icons a {
-  padding: 0.6rem;
+  padding: 0.5rem;
 }
 main .icons a:hover {
   color: #acdbdf;
@@ -316,14 +315,13 @@ main#home h1 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 3rem;
+    font-size: 6rem;
   }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -340,14 +338,13 @@ main#home h1 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -395,6 +392,16 @@ main#home h1 {
     border-radius: 50%;
     border: #acdbdf 3px solid;
   }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 3rem;
+  }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -408,4 +415,14 @@ main#home h1 {
   h2 {
     font-size: 1.1em;
   }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 5rem;
+  }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    font-size: 1rem;
 }
