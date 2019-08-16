@@ -10,7 +10,7 @@
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: #fff;
+  background: #f0ece2;
   transition: all 0.5s ease-out;
 }
 .menu-btn.close {
@@ -50,7 +50,8 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #1a1b27;
+  background-image: url(../img/background.jpg);
+
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -59,7 +60,7 @@
   transform: translate3d(0, 0, 0);
 }
 .menu-branding {
-  background: #242636;
+  background: black;
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
@@ -77,21 +78,20 @@
   transform: translate3d(0, 0, 0);
 }
 .menu .nav-item.current > a {
-  color: #7de7be;
+  color: #acdbdf;
 }
 .menu .nav-link {
   display: inline-block;
   position: relative;
   font-size: 30px;
-  text-transform: uppercase;
   padding: 1rem 0;
   font-weight: 300;
-  color: #fff;
+  color: #f0ece2;
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
-  color: #f48e43;
+  color: #acdbdf;
 }
 
 .nav-item:nth-child(1) {
@@ -115,8 +115,8 @@
 }
 
 body {
-  background: #242636;
-  color: #fff;
+  background-image: url(../img/background.jpg);
+  color: #f0ece2;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -147,7 +147,7 @@ h3 {
 h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
-  font-size: 6rem;
+  font-size: 2rem;
 }
 h1.small-heading,
 h2.small-heading,
@@ -158,7 +158,7 @@ h3.small-heading {
 }
 
 a {
-  color: #fff;
+  color: #f0ece2;
   text-decoration: none;
 }
 
@@ -169,7 +169,7 @@ header {
 }
 
 .text-secondary {
-  color: #7de7be;
+  color: #f0ece2;
 }
 
 main {
@@ -183,7 +183,7 @@ main .icons a {
   padding: 0.4rem;
 }
 main .icons a:hover {
-  color: #7de7be;
+  color: #acdbdf;
   transition: all 0.5s ease-out;
 }
 main#home {
@@ -193,7 +193,7 @@ main#home h1 {
   margin-top: 20vh;
 }
 
-.about-info {
+.about-info .about-info {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
@@ -204,11 +204,11 @@ main#home h1 {
   width: 30%;
   margin: auto;
   border-radius: 50%;
-  border: #7de7be 3px solid;
+  border: #acdbdf 3px solid;
 }
 
 #hello {
-  color: #7de7be;
+  color: #acdbdf;
 }
 
 .about-info .bio {
@@ -225,24 +225,25 @@ main#home h1 {
   grid-area: job3;
 }
 .about-info .job {
-  background: #2e3145;
+  background: #acdbdf;
   padding: 0.5rem;
-  border-bottom: #7de7be 5px solid;
+  border-bottom: #acdbdf 5px solid;
 }
 
 .projects {
   display: grid;
+  position: relative;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 2rem;
 }
 .projects img {
   width: 100%;
-  border: 3px #fff solid;
+  border: 3px #acdbdf solid;
 }
 .projects img:hover {
   opacity: 0.5;
-  border-color: #7de7be;
+  border-color: black;
   transition: all 0.5s ease-out;
 }
 
@@ -254,15 +255,16 @@ main#home h1 {
   margin-top: 1rem;
 }
 .boxes div {
-  font-size: 2rem;
-  border: 3px #fff solid;
+  font-size: 1rem;
+  border: 3px #f0ece2 solid;
   padding: 1.5rem 2.5rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
 }
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
-  background: #7de7be;
+  background: #acdbdf;
   color: #000;
 }
 .boxes div:hover span {
@@ -280,26 +282,25 @@ main#home h1 {
 .btn:hover,
 .btn-dark:hover,
 .btn-light:hover {
-  background: #7de7be;
+  background: #acdbdf;
   color: #000;
 }
 
 .btn-dark {
-  background: black;
-  color: #fff;
+  background: #acdbdf;
+  color: #333;
 }
 
 .btn-light {
-  background: #9ca0bd;
+  background: #acdbdf;
   color: #333;
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #101017;
-  color: #fff;
-  height: 60px;
+  background: #222;
+  color: #f0ece2;
 }
 
 @media screen and (min-width: 1171px) {
@@ -311,7 +312,7 @@ main#home h1 {
     width: 50%;
     margin: auto;
     border-radius: 50%;
-    border: #7de7be 3px solid;
+    border: #acdbdf 3px solid;
   }
 }
 
@@ -324,7 +325,7 @@ main#home h1 {
     width: 100%;
     margin: auto;
     border-radius: 50%;
-    border: #7de7be 3px solid;
+    border: #acdbdf 3px solid;
   }
 }
 
@@ -370,15 +371,19 @@ main#home h1 {
     width: 50%;
     margin: auto;
     border-radius: 50%;
-    border: #7de7be 3px solid;
+    border: #acdbdf 3px solid;
   }
 }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
+    font-size: 2.2em;
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  h2 {
+    font-size: 1.1em;
   }
 }
