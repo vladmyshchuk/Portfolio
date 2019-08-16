@@ -4,14 +4,14 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 .menu-btn .btn-line {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
   background: #f0ece2;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 .menu-btn.close {
   transform: rotate(180deg);
@@ -54,7 +54,7 @@
 
   list-style: none;
   transform: translate3d(0, -100%, 0);
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 .menu-nav.show {
   transform: translate3d(0, 0, 0);
@@ -62,7 +62,7 @@
 .menu-branding {
   background: black;
   transform: translate3d(0, 100%, 0);
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 .menu-branding.show {
   transform: translate3d(0, 0, 0);
@@ -72,7 +72,7 @@
 
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0);
@@ -88,7 +88,7 @@
   font-weight: 300;
   color: #f0ece2;
   text-decoration: none;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 .menu .nav-link:hover {
   color: #acdbdf;
@@ -149,12 +149,12 @@ h2.lg-heading,
 h3.lg-heading {
   font-size: 2rem;
 }
-h1.small-heading,
-h2.small-heading,
-h3.small-heading {
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(40, 42, 60, 0.5);
+  font-size: 1rem;
 }
 
 a {
@@ -180,11 +180,11 @@ main .icons {
   margin-top: 1rem;
 }
 main .icons a {
-  padding: 0.4rem;
+  padding: 0.6rem;
 }
 main .icons a:hover {
   color: #acdbdf;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 main#home {
   overflow: hidden;
@@ -201,7 +201,7 @@ main#home h1 {
 }
 .about-info .bio-image {
   grid-area: bioimage;
-  width: 30%;
+  width: 10rem;
   margin: auto;
   border-radius: 50%;
   border: #acdbdf 3px solid;
@@ -226,7 +226,7 @@ main#home h1 {
 }
 .about-info .job {
   background: #acdbdf;
-  padding: 0.5rem;
+  padding: 1rem;
   border-bottom: #acdbdf 5px solid;
 }
 
@@ -242,9 +242,9 @@ main#home h1 {
   border: 3px #acdbdf solid;
 }
 .projects img:hover {
-  opacity: 0.5;
+  opacity: 1;
   border-color: black;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 
 .boxes {
@@ -260,10 +260,10 @@ main#home h1 {
   padding: 1.5rem 2.5rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 .boxes div:hover {
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   background: #acdbdf;
   color: #000;
 }
@@ -275,7 +275,7 @@ main#home h1 {
 .btn-dark,
 .btn-light {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
 }
@@ -309,10 +309,21 @@ main#home h1 {
   }
   .about-info .bio-image {
     grid-area: bioimage;
-    width: 50%;
     margin: auto;
     border-radius: 50%;
     border: #acdbdf 3px solid;
+  }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 3rem;
+  }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -322,10 +333,21 @@ main#home h1 {
   }
   .about-info .bio-image {
     grid-area: bioimage;
-    width: 100%;
     margin: auto;
     border-radius: 50%;
     border: #acdbdf 3px solid;
+  }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 3rem;
+  }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -368,7 +390,7 @@ main#home h1 {
   }
   .about-info .bio-image {
     grid-area: bioimage;
-    width: 50%;
+
     margin: auto;
     border-radius: 50%;
     border: #acdbdf 3px solid;
